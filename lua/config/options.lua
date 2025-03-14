@@ -9,3 +9,6 @@ vim.g.autoformat = false
 
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "basedpyright"
+
+-- Enable line wrapping
+vim.wo.wrap = true
