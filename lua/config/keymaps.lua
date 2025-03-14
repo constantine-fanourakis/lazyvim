@@ -10,3 +10,5 @@ map("n", "<leader>k", "<C-w>k", { desc = "Go to Upper Window", remap = true })
 map("n", "<leader>l", "<C-w>l", { desc = "Go to Right Window", remap = true })
 
 map("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Lazy" })
+
+map("n", "<leader><space>", function() Snacks.picker.buffers() end, {desc = "Buffers", remap = true})
