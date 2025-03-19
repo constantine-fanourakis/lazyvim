@@ -12,3 +12,6 @@ vim.g.lazyvim_python_lsp = "basedpyright"
 
 -- Enable line wrapping
 vim.wo.wrap = true
+
+-- 80 char column
+vim.wo.colorcolumn = "80"
