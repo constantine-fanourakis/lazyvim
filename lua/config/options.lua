@@ -15,3 +15,6 @@ vim.wo.wrap = true
 
 -- 80 char column
 vim.wo.colorcolumn = "80"
+
+-- Set window title
+vim.opt.title = true
