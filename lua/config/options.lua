@@ -11,10 +11,26 @@ vim.g.autoformat = false
 vim.g.lazyvim_python_lsp = "basedpyright"
 
 -- Enable line wrapping
-vim.wo.wrap = true
+vim.opt.wrap = true
+vim.opt.breakindent = true
+vim.opt.linebreak = true
+vim.opt.showbreak = "↪ "
 
 -- 80 char column
-vim.wo.colorcolumn = "80"
+vim.opt.colorcolumn = "80"
 
 -- Set window title
 vim.opt.title = true
+
+-- No mouse clicky
+-- vim.opt.mouse = ""
+-- Disable left mouse click
+vim.keymap.set("", "<LeftMouse>", "<nop>", { noremap = true })
+vim.keymap.set("i", "<LeftMouse>", "<nop>", { noremap = true })
+
+-- No mouse scrolly (doesn't work well in ghostty)
+-- vim.opt.mousescroll = "ver:0,hor:0"
+-- vim.keymap.set("", "<up>", "<nop>", { noremap = true })
+-- vim.keymap.set("", "<down>", "<nop>", { noremap = true })
+-- vim.keymap.set("i", "<up>", "<nop>", { noremap = true })
+-- vim.keymap.set("i", "<down>", "<nop>", { noremap = true })

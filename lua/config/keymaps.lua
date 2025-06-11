@@ -10,3 +10,10 @@ map("n", "<leader>k", "<C-w>k", { desc = "Go to Upper Window", remap = true })
 map("n", "<leader>l", "<C-w>l", { desc = "Go to Right Window", remap = true })
 
 map("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Lazy" })
+
+-- Trim whitespace
+map("n", "<leader>tw", function()
+  local cursor_pos = vim.api.nvim_win_get_cursor(0)
+  vim.cmd([[%s/\s\+$//e]])
+  vim.api.nvim_win_set_cursor(0, cursor_pos)
+end, { desc = "Trim Whitespace" })
