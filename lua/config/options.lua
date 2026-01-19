@@ -2,10 +2,13 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+vim.g.lazyvim_picker = "snacks"
 vim.g.snacks_animate = false
-vim.g.snacks_indent = false
+vim.g.snacks_indent = true
 
 vim.g.autoformat = false
+
+vim.o.autoread = true
 
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "basedpyright"
@@ -34,3 +37,9 @@ vim.keymap.set("i", "<LeftMouse>", "<nop>", { noremap = true })
 -- vim.keymap.set("", "<down>", "<nop>", { noremap = true })
 -- vim.keymap.set("i", "<up>", "<nop>", { noremap = true })
 -- vim.keymap.set("i", "<down>", "<nop>", { noremap = true })
+
+-- Spaces!!!
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+vim.o.softtabstop = 4
